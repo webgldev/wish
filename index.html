@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/favicon-BST0-Rqg.ico" type="image/x-icon">
+    <title>WebGraphics</title>
+  <script type="module" crossorigin src="/assets/index-CQKNF_9Y.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D-ZiPupi.css">
+</head>
+<body>
+    <div id="container"></div>
+
+    <div class="content">
+        <ul>
+            <li><a id="visitorCount">Loading...</a></li>
+            <li><a href="https://github.com/webgldev" target="_blank">Github</a></li>
+            <li><a href="https://discord.gg/CpDsSpRzQp" target="_blank">Discord</a></li>
+            <li><a href="https://open.kakao.com/o/gm2Q9qoe" target="_blank">Kakao</a></li>
+            <li><button id="resetView">View Reset</button></li>
+        </ul>
+    </div>
+
+    <div id="planetFormModal" style="display: none;">
+        <form id="planetForm">
+            <p>행성을 생성해주세요.</p>
+            <input type="text" id="name" placeholder="행성 이름" required />
+            <textarea id="wish" placeholder="소원" required></textarea>
+            <input type="password" id="password" placeholder="비밀번호" required />
+            <button type="submit">행성 생성</button>
+            <button id="closePlanetForm" class="close" type="button">행성생성모달닫기</button>
+        </form>
+    </div>
+    <div id="passwordInput" style="position: absolute; display: none;">
+        <p><span id="planetName"></span></p>
+        <input type="password" id="inputPassword" placeholder="비밀번호 입력" required />
+        <div>
+            <button id="submitPassword">확인</button>
+            <button id="closePasswordInputModal" class="close">닫기</button>
+        </div>
+    </div>
+    <div id="wishModal" class="modal">
+        <div class="modal-content">
+            <h2 id="wishName">이름</h2>
+            <p id="wishText">소원 내용</p>
+            <div>
+                <button id="modifyWishBtn" class="close">수정</button>
+                <button id="closeWishModal" class="close">닫기</button>
+                <div id="editWishDiv" style="display: none;">
+                    <input type="text" id="editNameInput" placeholder="이름 수정" required>
+                    <textarea id="editWishInput" placeholder="소원 수정" rows="3" required></textarea>
+                    <input type="password" id="editPasswordInput" placeholder="비밀번호 입력" required />
+                    <button id="saveWishBtn" class="close">저장</button>
+                    <button id="cancelWishBtn" class="close">취소</button>
+                </div>
+            </div>
+            <button id="deletePlanetBtn">행성 삭제</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FontLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/geometries/TextGeometry.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/objects/Water.js"></script>
+</body>
+</html>
