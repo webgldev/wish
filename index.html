@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/wish/assets/favicon-BST0-Rqg.ico" type="image/x-icon">
     <title>WebGraphics</title>
-  <script type="module" crossorigin src="/wish/assets/index-CQKNF_9Y.js"></script>
-  <link rel="stylesheet" crossorigin href="/wish/assets/index-D-ZiPupi.css">
+  <script type="module" crossorigin src="/wish/assets/index-C0lKMoke.js"></script>
+  <link rel="stylesheet" crossorigin href="/wish/assets/index-ClOLeebU.css">
 </head>
 <body>
     <div id="container"></div>
 
     <div class="content">
         <ul>
-            <li><a id="visitorCount">Loading...</a></li>
+            <li><p class="des">나무를 클릭하면 추가할 수 있어요. (PC에서만 가능) </p></li>
+            <!-- <li><a id="visitorCount">Loading...</a></li> -->
             <li><a href="https://github.com/webgldev" target="_blank">Github</a></li>
             <li><a href="https://discord.gg/CpDsSpRzQp" target="_blank">Discord</a></li>
             <li><a href="https://open.kakao.com/o/gm2Q9qoe" target="_blank">Kakao</a></li>
@@ -27,7 +28,7 @@
             <input type="text" id="name" placeholder="행성 이름" required />
             <textarea id="wish" placeholder="소원" required></textarea>
             <input type="password" id="password" placeholder="비밀번호" required />
-            <button type="submit">행성 생성</button>
+            <button type="submit" id="createPlanetBtn">행성 생성</button>
             <button id="closePlanetForm" class="close" type="button">닫기</button>
         </form>
     </div>
@@ -69,6 +70,7 @@
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/objects/Water.js"></script>
 </body>
 </html>
